@@ -1,0 +1,13 @@
+name: clickfashion
+version: 0.1.0
+
+authors:
+  - boots <matthew.bootland@gmail.com>
+
+targets:
+  clickfashion:
+    main: src/clickfashion.cr
+
+crystal: 0.23.1
+
+license: MIT
