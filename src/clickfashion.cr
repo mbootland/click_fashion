@@ -1,5 +1,12 @@
 require "kemal"
 
+get "/" do |env|
+  render "src/views/subview.ecr", "src/views/layouts/layout.ecr"
+end
+
+Kemal.run
+
+
 # get "/" do
 #   render "public/index.html"
 # end
@@ -9,16 +16,12 @@ require "kemal"
 #   render "public/hello.ecr"
 # end
 
-get "/" do |env|
-  render "src/views/subview.ecr", "src/views/layouts/layout.ecr"
-end
-
-Kemal.run
-
-
+# macro my_renderer(filename)
+#   render filename, "src/views/layouts/layout.ecr"
+# end
 
 # require "./clickfashion/*"
 #
 # module Clickfashion
-#   # TODO Put your code here
+#   # stuff
 # end
